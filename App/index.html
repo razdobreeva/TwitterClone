@@ -1,17 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Проект</title>
+    <title>Twitter - Анастасия Раздобреева</title>
 
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,400i&amp;subset=cyrillic-ext">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+
   <body>
-    <h1>Проект</h1>
+    <div class="container">
+      <div class="row">
+
+        <!-- левая колонка -->
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="profile-background"></div>
+            <div class="profile-avatar">
+              <img src="img/avatar.jpg" alt="Анастасия Раздобреева">
+            </div>
+            <div class="card-body">
+              <h1 class="profile-title">
+                Анастасия Раздобреева
+              </h1>
+              <div class="profile-description">
+                <p>Победивший дракона сам становится драконом.</p>
+              </div>
+              <ul class="stats">
+                <li class="stats-item">
+                  <b class="stats-title">Твиты</b>
+                  <b class="stats-count">57</b>
+                </li>
+                <!--<li class="stats-item">
+                  <b class="stats-title">Лайки</b>
+                  <b class="stats-count">112</b>
+                </li>
+                <li class="stats-item">
+                  <b class="stats-title">Репосты</b>
+                  <b class="stats-count">85</b>
+                </li>-->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- правая колонка -->
+        <div class="col-md-8">
+          <!-- твитнуть -->
+          <div class="card mb-3">
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Что нового?">
+                </div>
+                <button type="submit" class="btn btn-primary">Твитнуть</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="card tweet-card tweet-card-rounded-top">
+            <div class="h4 mb-0">
+              Твиты пользователя
+            </div>
+          </div>
+
+          <!-- отдельный твит -->
+          <div class="card tweet-card">
+            <div class="tweet-date">
+              28 апр. 2017 г.
+            </div>
+            <div class="tweet-text font-size-large">
+              <p>
+                Запустил мини-курс. Бесплатная серия уроков - "Создай свой первый сайт на HTML5 и CSS3"
+                <a href="http://webcademy.ru/htmlsite">http://webcademy.ru/htmlsite</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- отдельный твит -->
+          <div class="card tweet-card">
+            <div class="tweet-date">
+              22 апр. 2017 г.
+            </div>
+            <div class="tweet-text font-size-small">
+              <p>
+                В последнее время на собеседованиях часто сталкиваюсь с ребятами, которые замаскировали бедные скиллы и знания штудированием "Cracking the coding interview".
+                Нужно срочно собирать похожий опыт и писать "Cracking the cracking the coding interview".
+              </p>
+            </div>
+          </div>
+
+          <!-- отдельный твит -->
+          <div class="card tweet-card">
+            <div class="tweet-date">
+              18 апр. 2017 г.
+            </div>
+            <div class="tweet-text font-size-normal">
+              <p>
+                А есть фантомные баги - это когда ты знаешь, что уже пофиксил эту ошибку, но тестеры продолжают находить ее на проде.
+              </p>
+            </div>
+          </div>
+
+          <!-- отдельный твит -->
+          <div class="card tweet-card">
+            <div class="tweet-date">
+              12 апр. 2017 г.
+            </div>
+            <div class="tweet-text font-size-large">
+              <p>
+                Третий день интенсива. Ведение проектов. Проджект-менеджмент, деловая этика, работа на потоке.
+              </p>
+            </div>
+          </div>
+
+          <!-- футер -->
+          <footer class="footer">
+            <p class="footer-copyright">
+              © Анастасия Раздобреева, 2018<br>
+              Сверстано с <i class="fa fa-heart"> </i> в <a class="footer-link" href="http://webcademy.ru/">WebCademy</a> в 2018 году.
+            </p>
+          </footer>
+
+        </div>
+      </div>
+    </div>
 
     <script src="libs/jquery/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

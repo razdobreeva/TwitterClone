@@ -1,0 +1,30 @@
+.stats {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    padding-left: 25px;
+    list-style-type: none;
+    /*background-color: red;
+    border: 5px solid black;*/
+  }
+
+  &-title {
+    font-size: 14px;
+    color: #8cb0bb;
+  }
+
+  &-count {
+    font-size: 22px;
+    font-weight: 600;
+    color: @mainColor;
+  }
+}
