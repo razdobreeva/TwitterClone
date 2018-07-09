@@ -12,6 +12,7 @@ gulp.task("server", ["less"], function() {
     server: { baseDir: "./App/" }
   });
   gulp.watch("App/**/*.html").on("change", browserSync.reload); // для автоматического обновления проекта при редактировании
+  gulp.watch("App/**/*.js").on("change", browserSync.reload);
   gulp.watch("App/less/**/*.less", ["less"]);
 });
 

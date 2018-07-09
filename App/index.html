@@ -34,7 +34,7 @@
               <ul class="stats">
                 <li class="stats-item">
                   <b class="stats-title">Твиты</b>
-                  <b class="stats-count">57</b>
+                  <b class="stats-count" id="tweetsCounter"></b>
                 </li>
                 <!--<li class="stats-item">
                   <b class="stats-title">Лайки</b>
@@ -54,72 +54,23 @@
           <!-- твитнуть -->
           <div class="card mb-3">
             <div class="card-body">
-              <form>
+              <form id="postNewTweet">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Что нового?">
+                  <input type="text" class="form-control" id="tweetText" placeholder="Что нового?">
                 </div>
                 <button type="submit" class="btn btn-primary">Твитнуть</button>
               </form>
             </div>
           </div>
 
-          <div class="card tweet-card tweet-card-rounded-top">
+          <div class="card card-title-only tweet-card-rounded-top">
             <div class="h4 mb-0">
               Твиты пользователя
             </div>
           </div>
 
-          <!-- отдельный твит -->
-          <div class="card tweet-card">
-            <div class="tweet-date">
-              9 июля 2018 г.
-            </div>
-            <div class="tweet-text font-size-large">
-              <p>
-                Наедине с собой этот человек всегда спит. Подробнее на <a href="https://www.livelib.ru/author/108/quotes-zhanpol-sartr">livelib.ru</a>
-              </p>
-            </div>
-          </div>
-
-          <!-- отдельный твит -->
-          <div class="card tweet-card">
-            <div class="tweet-date">
-              8 июля 2018 г.
-            </div>
-            <div class="tweet-text font-size-small">
-              <p>
-                "Шёл я лесом, вижу мост, под мостом ворона мокнет. Взял её за хвост, положил на мост, пускай ворона сохнет.
-                Шёл я лесом, вижу мост, на мосту ворона сохнет. Взял её за хвост, положил под мост, пускай ворона мокнет.
-                Шёл я лесом, вижу мост, под мостом ворона мокнет. Взял её за хвост, положил на мост, пускай ворона сохнет.
-                Шёл я лесом, вижу мост, на мосту ворона сохнет. Взял её за хвост, положил под мост, пускай ворона мокнет.
-                Шёл я лесом, вижу мост..."
-
-              </p>
-            </div>
-          </div>
-
-          <!-- отдельный твит -->
-          <div class="card tweet-card">
-            <div class="tweet-date">
-              7 июля 2018 г.
-            </div>
-            <div class="tweet-text font-size-normal">
-              <p>
-                Нужно срочно изучать, штудировать и применять на практике "Cracking the coding interview", пока никто не написал "Cracking the cracking the coding interview".
-              </p>
-            </div>
-          </div>
-
-          <!-- отдельный твит -->
-          <div class="card tweet-card">
-            <div class="tweet-date">
-              6 июля 2018 г.
-            </div>
-            <div class="tweet-text font-size-large">
-              <p>
-                Ура, интенсивчик!
-              </p>
-            </div>
+          <!-- контейнер для твитов -->
+          <div id="tweetsList">
           </div>
 
           <!-- футер -->
@@ -137,6 +88,7 @@
     <script src="libs/jquery/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>
