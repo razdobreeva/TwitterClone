@@ -1,0 +1,116 @@
+body {
+  padding-top: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #B0C4DE;
+}
+.btn {
+  background-color: #4682b4;
+}
+.profile-background {
+  height: 120px;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  margin-top: -50px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 4px solid #ffffff;
+  border-radius: 100px;
+}
+.profile-avatar img {
+  max-width: 100%;
+  height: auto;
+}
+.profile-title {
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+}
+.profile-description {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  text-align: center;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+  padding-left: 25px;
+  list-style-type: none;
+  /*background-color: red;
+    border: 5px solid black;*/
+}
+.stats-title {
+  font-size: 14px;
+  color: #8cb0bb;
+}
+.stats-count {
+  font-size: 22px;
+  font-weight: 600;
+  color: #087de1;
+}
+.tweet-card {
+  padding: 1.25rem;
+  border-bottom: 0px;
+  border-radius: 0;
+}
+.tweet-card:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+.tweet-card-rounded-top {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+.tweet-date {
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  font-weight: 800;
+}
+.tweet-text p {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.tweet-text a {
+  color: #54a7ef;
+}
+.font-size-small p {
+  font-size: 16px;
+}
+.font-size-normal p {
+  font-size: 20px;
+}
+.font-size-large p {
+  font-size: 22px;
+}
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #000000;
+}
+.footer a {
+  font-weight: 800;
+  color: #4682b4;
+}
+.footer P {
+  padding-bottom: 16px;
+  line-height: 2;
+}
+.footer .fa-heart {
+  color: #ce2222;
+}

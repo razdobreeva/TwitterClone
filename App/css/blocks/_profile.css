@@ -1,0 +1,32 @@
+.profile-background {
+  height: 120px;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  margin-top: -50px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 4px solid #ffffff;
+  border-radius: 100px;
+}
+.profile-avatar img {
+  max-width: 100%;
+  height: auto;
+}
+.profile-title {
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+}
+.profile-description {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  text-align: center;
+}
